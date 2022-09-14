@@ -55,7 +55,7 @@ ROOT_URLCONF = 'stripe_API_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,3 +122,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+STRIPE_PUBLIC_KEY = "pk_test_51LhZwuKMectijC2cxUBucwlgjfZee6O7d4hK9nZofXw8ZSjOtwioJLB0MH35khTOE03wb4B5VWGfiek9ncAOdkap00e1FKGTOP"
+STRIPE_SECRET_KEY = "sk_test_51LhZwuKMectijC2cbSnuEd8ERvEXFnX6XuVeYpFeCCRI48FQxvjQ2VaA5wyB9MTCIODICeiobL1RCoXDdFtv4SQO00ul3lyH7c"
+STRIPE_WEBHOOK_SECRET = ""

@@ -1,9 +1,9 @@
 from django.db import models
 
 
-class Item(models.Model):
+class Product(models.Model):
     name = models.CharField(
-        max_length=255,
+        max_length=100,
         verbose_name='Имя'
     )
     description = models.TextField(
@@ -12,6 +12,7 @@ class Item(models.Model):
         blank=True
     )
     price = models.IntegerField(
+        default=0,
         verbose_name='Цена'
     )
 
